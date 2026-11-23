@@ -107,3 +107,15 @@ description: "Build thin, mobile, bot, and text clients with LibreMetaverse, Lum
 - Respect grid rules and TPV policy for bots: use a dedicated account, honour parcel bot restrictions and Linden Lab bot policy on Agni, and throttle object and chat actions.
 
 - For OpenSim bots, the same LibreMetaverse client works against a local standalone login URI, which is the safest load and behaviour test bed.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/code-csharp.md` (100,171 bytes)
+- `references/code-java-cpp.md` (122,160 bytes)
+- `references/code-kotlin.md` (127,804 bytes)
+- `references/code-react-typescript.md` (147,481 bytes)
+- `references/examples-clients.md` (104,360 bytes)
+- `references/libremetaverse-api.md` (487,306 bytes)
+- `references/libremetaverse-data-model.md` (110,221 bytes)
+- `references/libremetaverse-source-tree.md` (30,312 bytes)

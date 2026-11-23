@@ -119,3 +119,32 @@ description: "Run, configure, extend, and debug OpenSimulator grids and regions 
 - For a region that will not start, check in order: port already in use, database connection, ROBUST reachability in grid mode, physics native library load, and a module DLL built for the wrong .NET version.
 
 - Forks reality check in detail: AuroraSim stopped in 2014, WhiteCoreSim continues Aurora lineage with unverified current activity, Halcyon forked in 2010 for InWorldz scale, SimianGrid is a PHP services alternative, DreamGrid is an installer distribution not a fork, use upstream OpenSim unless a fork feature is the explicit goal.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/config-estates-ini.md` (997 bytes)
+- `references/config-flotsamcache-ini.md` (3,793 bytes)
+- `references/config-grid-ini.md` (2,777 bytes)
+- `references/config-gridcommon-ini.md` (8,689 bytes)
+- `references/config-gridhypergrid-ini.md` (3,687 bytes)
+- `references/config-opensimdefaults-ini.md` (80,168 bytes)
+- `references/config-os-webrtc-janus-ini.md` (1,843 bytes)
+- `references/config-ossldefaultenable-ini.md` (12,860 bytes)
+- `references/config-osslenable-ini.md` (4,046 bytes)
+- `references/config-pcampbot-ini.md` (949 bytes)
+- `references/config-regions-ini.md` (3,796 bytes)
+- `references/config-robust-hg-ini.md` (40,646 bytes)
+- `references/config-robust-tests-ini.md` (20,588 bytes)
+- `references/config-sqlitestandalone-ini.md` (1,778 bytes)
+- `references/config-standalone-ini.md` (6,035 bytes)
+- `references/config-standalonecommon-ini.md` (16,630 bytes)
+- `references/config-standalonehypergrid-ini.md` (9,637 bytes)
+- `references/opensim-api.md` (1,194,610 bytes)
+- `references/opensim-console-commands.md` (5,980 bytes)
+- `references/opensim-ini-reference.md` (55,858 bytes)
+- `references/opensim-lsl-implementation.md` (116,693 bytes)
+- `references/opensim-operations-guide.md` (87,952 bytes)
+- `references/opensim-source-tree.md` (62,577 bytes)
+- `references/ossl-functions.md` (95,151 bytes)
+- `references/robust-ini-reference.md` (28,307 bytes)

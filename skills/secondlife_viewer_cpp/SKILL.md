@@ -117,3 +117,13 @@ description: "Work in the official Second Life viewer and third-party viewer C++
 - Avatar bake grey: trace appearance and Bakes on Mesh code paths and COF state before touching materials code.
 
 - Cherry pick from Firestorm fails to compile: expect missing Firestorm only helpers, settings, and UI strings, port the logic not the file.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/alchemy-source-tree.md` (349,869 bytes)
+- `references/firestorm-settings.md` (386,264 bytes)
+- `references/firestorm-source-tree.md` (817,039 bytes)
+- `references/viewer-internals-guide.md` (106,445 bytes)
+- `references/viewer-settings.md` (578,093 bytes)
+- `references/viewer-source-tree.md` (267,635 bytes)

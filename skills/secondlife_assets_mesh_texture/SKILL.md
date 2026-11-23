@@ -119,3 +119,9 @@ description: "Handle Second Life prims, sculpties, mesh, textures, PBR materials
 - Shiny or dark PBR object: check metallic roughness channel mapping, environment EEP lighting, and normal map handedness, in that order.
 
 - Works in one viewer not another: suspect JPEG2000 codec differences and PBR support level first, especially on V1 lineage viewers with no PBR pipeline.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/asset-inventory-enums.md` (12,641 bytes)
+- `references/assets-pipeline-guide.md` (85,481 bytes)

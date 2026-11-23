@@ -155,3 +155,16 @@ description: "Implement and debug Second Life login, UDP circuits, capabilities,
 - Symptom works on OpenSim fails on Agni: check cap availability differences, template zerocoded flags, and SimulatorFeatures gating, because OpenSim grants caps and flags more loosely.
 
 - Capture a working oracle first: run LibreMetaverse TestClient against the same grid and region and compare its packet and cap sequence to yours message by message.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/capabilities.md` (23,528 bytes)
+- `references/code-go.md` (120,412 bytes)
+- `references/code-python.md` (91,137 bytes)
+- `references/code-rust.md` (147,396 bytes)
+- `references/message-stubs-csharp.md` (62,371 bytes)
+- `references/message-stubs-kotlin.md` (53,685 bytes)
+- `references/message-stubs-rust.md` (53,198 bytes)
+- `references/message-stubs-typescript.md` (55,142 bytes)
+- `references/udp-messages.md` (199,591 bytes)

@@ -1,6 +1,6 @@
 # secondlife-skills
 
-Second Life coding skills for Muse (Muse Spark) and other skill loaders — covering the whole open-source Second Life ecosystem, with deep generated references from canonical upstream sources.
+Second Life coding skills for Muse (Muse Spark) and other skill loaders — covering the whole open-source Second Life ecosystem, with deep generated references from canonical upstream sources and complete multi-language implementations of the protocol stack.
 
 ## Skills
 
@@ -13,6 +13,25 @@ Second Life coding skills for Muse (Muse Spark) and other skill loaders — cove
 | `skills/secondlife_lsl_scripting` | LSL/SLua/OSSL — plus generated references for 529 LSL functions, 1,082 constants, 43 events, 133 enum groups, from `secondlife/lsl-definitions` |
 | `skills/secondlife_opensim_server` | OpenSim, ROBUST, region modules, physics, scripting engines — plus generated OSSL function reference, OpenSim LSL implementation index, and annotated OpenSim.ini / Robust.ini references |
 | `skills/secondlife_assets_mesh_texture` | Prims, LLMesh, JPEG2000, glTF PBR, BoM, Animesh, EEP — plus generated asset/inventory enum reference |
+
+
+## Code in every language
+
+The protocol and client stack (LLSD, zerocode, UDP circuit, caps, login, EventQueueGet) is implemented end-to-end in each of these, as full commented reference code in the skills' `references/` folders:
+
+| Language | File | Lives in |
+|---|---|---|
+| Rust | `code-rust.md` | `secondlife_protocol` |
+| Go | `code-go.md` | `secondlife_protocol` |
+| Python | `code-python.md` | `secondlife_protocol` |
+| React / TypeScript | `code-react-typescript.md` | `secondlife_client_libraries` |
+| Kotlin (Android) | `code-kotlin.md` | `secondlife_client_libraries` |
+| Java + C++ | `code-java-cpp.md` | `secondlife_client_libraries` |
+| C# (LibreMetaverse programs) | `code-csharp.md` | `secondlife_client_libraries` |
+
+Plus per-message stubs for all 483 UDP messages in TypeScript, Kotlin, Rust, and C# (`message-stubs-*.md` in `secondlife_protocol`), 34 complete LSL scripts (`examples-lsl.md`), and 21 worked client examples (`examples-clients.md`).
+
+Total instruction size: **8,182,608 bytes** across 7 skills and 70+ files (SKILL.md routing layers plus generated and hand-written references).
 
 Each skill folder contains `SKILL.md` (with YAML frontmatter: `name` + `description`), `skill.yaml`, and a `references/` folder.
 
@@ -27,7 +46,7 @@ cp -r secondlife-skills/skills/secondlife_* ~/workspace/custom-skills/
 
 ## Regenerating the references
 
-The `references/` catalogues are generated from canonical upstream sources (Linden Lab `lsl-definitions` and message template, viewer `settings.xml`, LibreMetaverse and OpenSim source trees). The generators are `gen_refs.py`, `gen_refs2.py`, and `gen_refs3.py` in this repo; fetched upstream files live in `sources/` (git-ignored). Re-run them after upstream revs to refresh the catalogues.
+The `references/` catalogues are generated from canonical upstream sources (Linden Lab `lsl-definitions` and message template, viewer `settings.xml`, LibreMetaverse and OpenSim source trees). The generators are `gen_refs.py` through `gen_refs7.py` in this repo; fetched upstream files live in `sources/` (git-ignored). Re-run them after upstream revs to refresh the catalogues.
 
 ## Key traps encoded in these skills
 

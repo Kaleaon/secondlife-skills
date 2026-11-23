@@ -119,3 +119,15 @@ description: "Write, lint, optimise, and port LSL scripts and understand SLua, O
 - Reproduce on Aditi for SL behaviour and on a local OpenSim for engine behaviour, and record grid, region, engine, and compiler in the bug report, because LSL without an engine label is not reproducible.
 
 - For a script that does nothing, check in order: script is set running and compiled with no error, the object has the needed permissions, the event you expect is actually firing, listen handles are not filtered to a different channel or key, and OSSL threat level is not blocking the call.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/examples-lsl.md` (126,411 bytes)
+- `references/lsl-call-patterns.md` (183,799 bytes)
+- `references/lsl-constants.md` (229,916 bytes)
+- `references/lsl-definitions-complete.md` (662,827 bytes)
+- `references/lsl-enums.md` (40,329 bytes)
+- `references/lsl-events.md` (18,886 bytes)
+- `references/lsl-functions.md` (326,579 bytes)
+- `references/slua-definitions.md` (4,964 bytes)
