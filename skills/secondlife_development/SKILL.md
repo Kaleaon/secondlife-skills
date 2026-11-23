@@ -1,17 +1,17 @@
 ---
 name: secondlife_development
-description: "Route and coordinate any Second Life coding task across protocol, viewer, client libraries, LSL, OpenSim, and assets using the canonical cross-check stack."
+description: "Route and coordinate any Second Life coding task across protocol, viewer, client libraries, LSL, OpenSim, assets, WebRTC voice, RLVa, and Linkpoint design using the canonical cross-check stack."
 ---
 
 # Second Life Development
 
 ## Route the task first
 
-- Classify the bug or feature before editing code: protocol or LLSD, viewer C++, client library, LSL or SLua, OpenSim server, or assets and rendering.
+- Classify the bug or feature before editing code: protocol or LLSD, viewer C++, client library, LSL or SLua, OpenSim server, assets and rendering, WebRTC voice and spatial audio, RLV or RLVa viewer behaviour, or Linkpoint UI design and Ktheme palettes.
 
 - Load the matching specialist skill for the domain and keep this skill as the router when a task spans two or more domains.
 
-- Treat Joe's active stacks as first-class targets: React-Linkpoint in TypeScript and React, Lumiya-Redux in Java for Android, Linkpoint in Kotlin, and LibreMetaverse in C#.
+- Treat Joe's active stacks as first-class targets: React-Linkpoint in TypeScript and React, Linkpoint-stitch and Linkpoint in Kotlin and Jetpack Compose, Linkpoint Design (`@linkpoint/design-system`), Lumiya-Redux in Java for Android, and LibreMetaverse in C#.
 
 ## Apply the cross-check stack in order
 
@@ -27,6 +27,12 @@ description: "Route and coordinate any Second Life coding task across protocol, 
 
 - Check mesh, texture, PBR, EEP, and Bakes on Mesh rendering in viewer code first, Firestorm second, and LibreMetaverse MeshFoundry for geometry parsing in isolation.
 
+- Check WebRTC voice signaling, Opus SDP munging, `"SLData"` spatial updates, parcel media streams, and LLUDP sound triggers in secondlife/viewer `llvoicewebrtc.cpp`, `llwebrtc.cpp`, and `llaudioengine_openal.cpp` first, `LibreMetaverse.Voice.WebRTC` second, and `Kaleaon/react-linkpoint` `voice-protocol.ts` and `sl-sounds.cjs` third.
+
+- Check RLV and RLVa `llOwnerSay` command parsing, per-object restriction maps, and positive-channel handshakes in `FirestormViewer/phoenix-firestorm` release branches (`indra/newview/rlva/`) first, `LibreMetaverse.RLV` second, and `Kaleaon/react-linkpoint` `rlv*.ts` third.
+
+- Check Linkpoint layout packs, CleverFerret LCARS split-frame geometry, 24+ Ktheme palettes, WCAG relative-luminance contrast adjustment, and Pass-2 HUD slots in `Kaleaon/linkpoint-design` (`@linkpoint/design-system`) across `Kaleaon/react-linkpoint`, `Kaleaon/Linkpoint`, and `Kaleaon/Linkpoint-stitch`.
+
 ## Respect the source hierarchy
 
 - Put secondlife/viewer first as normative truth for what Agni actually accepts, even when a wiki or an older library disagrees.
@@ -37,7 +43,7 @@ description: "Route and coordinate any Second Life coding task across protocol, 
 
 - Treat wiki.secondlife.com as a human readable starting point only and check its revision date, because many pages are 5 to 15 years stale.
 
-- Never cite github.com/secondlife/llsd, because that repo returned 404 in November 2026, and never invent a GitHub repo for Catznip, Kokua, or Black Dragon, because none was verified.
+- Never cite github.com/secondlife/llsd, because that repo returned 404 in November 2026, and never invent a GitHub repo for Catznip, Kokua, Black Dragon, or the Marine Kelley Restrained Love viewer, because none was verified — cite the official Third Party Viewer Directory instead.
 
 ## Test on the right grid
 
@@ -74,19 +80,23 @@ description: "Route and coordinate any Second Life coding task across protocol, 
 
 - secondlife/master-message-template at https://github.com/secondlife/master-message-template, the data repo holding message_template.msg, historically stale for years per a Linden Lab feedback ticket and re-synced after, so always diff it.
 
-- FirestormViewer/phoenix-firestorm at https://github.com/FirestormViewer/phoenix-firestorm, C++, LGPL-2.1, Autobuild, master is nightly and release branches are named like Firestorm_7.1.13, most used third party viewer.
+- FirestormViewer/phoenix-firestorm at https://github.com/FirestormViewer/phoenix-firestorm, C++, LGPL-2.1, Autobuild, master is nightly and release branches are named like Firestorm_7.1.13, most used third party viewer and canonical open tree for RLVa (`indra/newview/rlva/`).
 
 - AlchemyViewer/Alchemy at https://github.com/AlchemyViewer/Alchemy, C++, LGPL-2.1, CMake plus vcpkg with indra/vcpkg.json, branch develop, the modern build exemplar.
 
 - singularity-viewer/SingularityViewer at https://github.com/singularity-viewer/SingularityViewer, C++, Autobuild, Snowglobe 1.5 lineage, V1 UI with backported protocol.
 
-- cinderblocks/libremetaverse at https://github.com/cinderblocks/libremetaverse, C#, BSD-3, .NET 8 to 10, NuGet LibreMetaverse 3.2.1 verified, the reusable client library and semantic oracle for ports.
+- cinderblocks/libremetaverse at https://github.com/cinderblocks/libremetaverse, C#, BSD-3, .NET 8 to 10, NuGet LibreMetaverse 3.2.1 verified, the reusable client library and semantic oracle for ports including `LibreMetaverse.Voice.WebRTC`, `LibreMetaverse.Voice.Vivox`, and `LibreMetaverse.RLV`.
 
 - openmetaversefoundation/libopenmetaverse, the superseded predecessor, C# with Prebuild and .NET Framework 3.5 era docs, historical reference only.
 
 - radegastdev/radegast at https://github.com/radegastdev/radegast, C#, BSD style, full text client pinning old libopenmetaverse as a submodule, slowly maintained with org activity in 2024.
 
 - Kaleaon/Lumiya-Redux at https://github.com/Kaleaon/Lumiya-Redux, Java, Apache-2.0, Gradle JDK 17 SDK 34, recovery of Lumiya 3.4.2 with 1302 classes and 477 UDP message classes.
+
+- Kaleaon/react-linkpoint and Kaleaon/Linkpoint at https://github.com/Kaleaon/Linkpoint, TypeScript/React and Kotlin/Android viewers sharing `@linkpoint/design-system`, WebRTC voice (`src/linkpoint/voice-protocol.ts`, `WebRtcVoiceSession.kt`), LLUDP audio (`core/sl-sounds.cjs`, `SoundFlags.kt`), and RLVa (`src/linkpoint/rlv*.ts`, `RLVController.kt`).
+
+- Kaleaon/Linkpoint-stitch at https://github.com/Kaleaon/Linkpoint-stitch and Kaleaon/linkpoint-design (`packages/design-system`), Jetpack Compose and TypeScript Linkpoint UI architecture defining the 6 layout packs (including CleverFerret Sweep Console LCARS), 24+ Ktheme JSON palettes, WCAG contrast correction, and Pass-2 HUD composition (`slots 31..38`).
 
 - CasperTech/node-metaverse at https://github.com/CasperTech/node-metaverse, TypeScript, MIT, npm @caspertech/node-metaverse 0.7.28 with @caspertech/llsd, the only credible TypeScript client library found.
 
@@ -109,6 +119,12 @@ description: "Route and coordinate any Second Life coding task across protocol, 
 - If you control the server, the region will not start, ROBUST will not connect, physics collides wrong, or a region module misbehaves, start in secondlife_opensim_server.
 
 - If the symptom is grey textures, invisible mesh, wrong PBR shine, bake failures, animesh frozen, or sky and water wrong, start in secondlife_assets_mesh_texture.
+
+- If the symptom is WebRTC voice failing to connect, `VoiceSignalingRequest` rejecting ICE candidates, spatial voice staying mono or silent, parcel music failing on Agni, or `SoundTrigger` and `AttachedSound` packets corrupting audio, start in secondlife_voice_webrtc.
+
+- If the task involves `@cmd[:option]=param` owner-say restrictions, RLV relays, attachment locks, `@version` or `@getstatus` channel replies, or camera, chat, inventory, and teleport gating, start in secondlife_rlva.
+
+- If the task builds or themes Linkpoint UI floaters, HUD docks, Ktheme selectors, CleverFerret LCARS split-frame chrome, WCAG contrast correction, or mobile thumb-zone cockpits across React or Jetpack Compose, start in secondlife_linkpoint_design.
 
 ## Worked cross-check examples
 
@@ -137,3 +153,8 @@ description: "Route and coordinate any Second Life coding task across protocol, 
 - State which grid the test ran on, Agni, Aditi, OpenSim standalone, or OpenSim grid mode, because results do not transfer silently between them.
 
 - State the licence of any code copied or ported and where it landed in the target tree.
+
+
+## Deep references
+Load these on demand from this skill's `references/` folder when the task needs exact data or full implementations rather than the summaries above.
+- `references/master-index.md` (5,803 bytes)

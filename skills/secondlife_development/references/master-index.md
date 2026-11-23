@@ -1,7 +1,7 @@
-# Master Reference Index — all seven Second Life skills
+# Master Reference Index — all ten Second Life skills
 Every deep reference file in this repo, by skill, with sizes. Generated from the repo tree; regenerate after adding references.
 
-Total reference bytes across all skills: 8,099,500.
+Total reference bytes across all skills: 8,178,028.
 
 ## secondlife_assets_mesh_texture
 - `skills/secondlife_assets_mesh_texture/references/asset-inventory-enums.md` — 12,641 bytes
@@ -16,6 +16,9 @@ Total reference bytes across all skills: 8,099,500.
 - `skills/secondlife_client_libraries/references/libremetaverse-api.md` — 487,306 bytes
 - `skills/secondlife_client_libraries/references/libremetaverse-data-model.md` — 110,221 bytes
 - `skills/secondlife_client_libraries/references/libremetaverse-source-tree.md` — 30,312 bytes
+
+## secondlife_linkpoint_design
+- `skills/secondlife_linkpoint_design/references/ktheme-palettes-and-layouts.md` — 21,782 bytes
 
 ## secondlife_lsl_scripting
 - `skills/secondlife_lsl_scripting/references/examples-lsl.md` — 126,411 bytes
@@ -65,6 +68,9 @@ Total reference bytes across all skills: 8,099,500.
 - `skills/secondlife_protocol/references/message-stubs-typescript.md` — 55,142 bytes
 - `skills/secondlife_protocol/references/udp-messages.md` — 199,591 bytes
 
+## secondlife_rlva
+- `skills/secondlife_rlva/references/rlva-command-reference.md` — 27,709 bytes
+
 ## secondlife_viewer_cpp
 - `skills/secondlife_viewer_cpp/references/alchemy-source-tree.md` — 349,869 bytes
 - `skills/secondlife_viewer_cpp/references/firestorm-settings.md` — 386,264 bytes
@@ -72,3 +78,6 @@ Total reference bytes across all skills: 8,099,500.
 - `skills/secondlife_viewer_cpp/references/viewer-internals-guide.md` — 106,445 bytes
 - `skills/secondlife_viewer_cpp/references/viewer-settings.md` — 578,093 bytes
 - `skills/secondlife_viewer_cpp/references/viewer-source-tree.md` — 267,635 bytes
+
+## secondlife_voice_webrtc
+- `skills/secondlife_voice_webrtc/references/webrtc-and-audio-reference.md` — 29,037 bytes

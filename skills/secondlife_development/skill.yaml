@@ -1,5 +1,5 @@
 name: "secondlife_development"
 title: "Second Life Development"
-description: "Route and coordinate any Second Life coding task across protocol, viewer, client libraries, LSL, OpenSim, and assets using the canonical cross-check stack."
+description: "Route and coordinate any Second Life coding task across protocol, viewer, client libraries, LSL, OpenSim, assets, WebRTC voice, RLVa, and Linkpoint design using the canonical cross-check stack."
 category: "Software development"
 include_in_prompt: true

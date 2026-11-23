@@ -1,0 +1,5 @@
+name: "secondlife_voice_webrtc"
+title: "Second Life WebRTC Voice and Spatial Audio"
+description: "Implement Second Life WebRTC voice signaling, Opus 48 kHz stereo SDP munging, SLData spatial updates, parcel media streams, and Unencoded LLUDP spatial and attached audio."
+category: "Software development"
+include_in_prompt: true

@@ -1,0 +1,5 @@
+name: "secondlife_rlva"
+title: "Second Life RLV and RLVa Viewer Behaviour"
+description: "Implement Restrained Love (RLV and RLVa) owner-say command parsing, positive-channel queries, per-object restriction maps, exceptions, and force actions safely."
+category: "Software development"
+include_in_prompt: true

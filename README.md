@@ -13,6 +13,9 @@ Second Life coding skills for Muse (Muse Spark) and other skill loaders — cove
 | `skills/secondlife_lsl_scripting` | LSL/SLua/OSSL — plus generated references for 529 LSL functions, 1,082 constants, 43 events, 133 enum groups, from `secondlife/lsl-definitions` |
 | `skills/secondlife_opensim_server` | OpenSim, ROBUST, region modules, physics, scripting engines — plus generated OSSL function reference, OpenSim LSL implementation index, and annotated OpenSim.ini / Robust.ini references |
 | `skills/secondlife_assets_mesh_texture` | Prims, LLMesh, JPEG2000, glTF PBR, BoM, Animesh, EEP — plus generated asset/inventory enum reference |
+| `skills/secondlife_voice_webrtc` | WebRTC voice signaling (`ProvisionVoiceAccountRequest`, `ParcelVoiceInfoRequest`, `VoiceSignalingRequest`), Opus 48 kHz stereo SDP munging, `"SLData"` spatial updates, legacy Vivox `SLVoice` boundaries, parcel music/media streams, and `Unencoded` LLUDP sound effects |
+| `skills/secondlife_rlva` | Restrained Love (RLV & RLVa) `llOwnerSay` security boundary, `@cmd[:option]=param` command grammar, per-object restriction maps, positive-channel queries (`@version*`, `@getstatus`, `@getoutfit`, `@getattach`, `@getsitid`), and attachment/relay rules |
+| `skills/secondlife_linkpoint_design` | `@linkpoint/design-system` shared across React-Linkpoint, Linkpoint, and Linkpoint-stitch — 6 layout packs (including CleverFerret Sweep Console LCARS), 28 Ktheme JSON palettes across 4 families, WCAG contrast correction, thumb-zone ergonomics, and Pass-2 HUD slots (`31..38`) |
 
 
 ## Code in every language
@@ -31,7 +34,7 @@ The protocol and client stack (LLSD, zerocode, UDP circuit, caps, login, EventQu
 
 Plus per-message stubs for all 483 UDP messages in TypeScript, Kotlin, Rust, and C# (`message-stubs-*.md` in `secondlife_protocol`), 34 complete LSL scripts (`examples-lsl.md`), and 21 worked client examples (`examples-clients.md`).
 
-Total instruction size: **8,182,608 bytes** across 7 skills and 70+ files (SKILL.md routing layers plus generated and hand-written references).
+Total instruction size: **8,294,873 bytes** across 10 skills and 80+ files (SKILL.md routing layers plus generated and hand-written references).
 
 Each skill folder contains `SKILL.md` (with YAML frontmatter: `name` + `description`), `skill.yaml`, and a `references/` folder.
 
@@ -52,7 +55,7 @@ The `references/` catalogues are generated from canonical upstream sources (Lind
 
 - There is **no** `github.com/secondlife/llsd` repo (404) — use `secondlife/python-llsd` + LibreMetaverse.StructuredData.
 - The master message template has been stale before — always diff against the viewer copy.
-- Catznip, Kokua, and Black Dragon have **no verified GitHub repo** — check the TPV Directory source link.
+- Catznip, Kokua, Black Dragon, and the Marine Kelley Restrained Love viewer have **no verified GitHub repo** — check the TPV Directory source link.
 - `github.com/opensim/opensim` is a **mirror** — canonical git is at opensimulator.org.
 
 ## Licence

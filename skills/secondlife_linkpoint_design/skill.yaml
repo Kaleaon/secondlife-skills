@@ -1,0 +1,5 @@
+name: "secondlife_linkpoint_design"
+title: "Linkpoint Design System and Ktheme Adapter"
+description: "Build and theme Second Life viewer UI across React and Jetpack Compose using the six Linkpoint layout packs, 24+ Ktheme palettes, WCAG contrast enforcement, and Pass-2 HUD slots."
+category: "Software development"
+include_in_prompt: true
