@@ -1,0 +1,5 @@
+name: "secondlife_assets_mesh_texture"
+title: "Second Life Assets Mesh and PBR"
+description: "Handle Second Life prims, sculpties, mesh, textures, PBR materials, Bakes on Mesh, Animesh, and EEP across viewer, LibreMetaverse, and Blender pipelines."
+category: "Software development"
+include_in_prompt: true

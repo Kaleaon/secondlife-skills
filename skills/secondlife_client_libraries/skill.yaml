@@ -1,0 +1,5 @@
+name: "secondlife_client_libraries"
+title: "Second Life Client Libraries"
+description: "Build thin, mobile, bot, and text clients with LibreMetaverse, Lumiya-Redux, Radegast, and node-metaverse, and port protocol code to TypeScript and Kotlin."
+category: "Software development"
+include_in_prompt: true

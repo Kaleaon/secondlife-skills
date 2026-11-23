@@ -1,0 +1,5 @@
+name: "secondlife_lsl_scripting"
+title: "Second Life LSL and SLua Scripting"
+description: "Write, lint, optimise, and port LSL scripts and understand SLua, OSSL, and the SL versus OpenSim scripting differences that break scripts."
+category: "Software development"
+include_in_prompt: true

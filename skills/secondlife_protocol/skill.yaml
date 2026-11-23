@@ -1,0 +1,5 @@
+name: "secondlife_protocol"
+title: "Second Life Protocol and LLSD"
+description: "Implement and debug Second Life login, UDP circuits, capabilities, Event Queue, and LLSD in any language using the message template and viewer code as truth."
+category: "Software development"
+include_in_prompt: true

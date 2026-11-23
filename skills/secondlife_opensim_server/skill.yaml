@@ -1,0 +1,5 @@
+name: "secondlife_opensim_server"
+title: "OpenSimulator Server"
+description: "Run, configure, extend, and debug OpenSimulator grids and regions in C#, including ROBUST services, region modules, physics, and scripting engines."
+category: "Software development"
+include_in_prompt: true

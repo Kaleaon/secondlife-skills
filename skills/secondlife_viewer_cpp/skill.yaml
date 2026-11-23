@@ -1,0 +1,5 @@
+name: "secondlife_viewer_cpp"
+title: "Second Life Viewer C++"
+description: "Work in the official Second Life viewer and third-party viewer C++ codebases, with Autobuild and CMake builds, indra layout, and TPV policy."
+category: "Software development"
+include_in_prompt: true
