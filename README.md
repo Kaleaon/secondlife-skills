@@ -31,7 +31,15 @@ The protocol and client stack (LLSD, zerocode, UDP circuit, caps, login, EventQu
 
 Plus per-message stubs for all 483 UDP messages in TypeScript, Kotlin, Rust, and C# (`message-stubs-*.md` in `secondlife_protocol`), 34 complete LSL scripts (`examples-lsl.md`), and 21 worked client examples (`examples-clients.md`).
 
-Total instruction size: **8,182,608 bytes** across 7 skills and 70+ files (SKILL.md routing layers plus generated and hand-written references).
+Total instruction size: **8.2 MB and growing** across 7 skills and 70+ files. **There is no size cap.** The layout is built to scale to **1 GB or more** of instructions: each `SKILL.md` stays a lean routing layer (frontmatter + judgement + links), and all bulk lives in per-topic files under `references/` that a loader pulls in only when a task needs them. Grow the corpus by adding reference files and regenerating catalogues — never by bloating `SKILL.md`.
+
+## Verifying the conversions
+
+`verify_refs.py` checks every converted reference against its canonical source: SKILL.md frontmatter and `skill.yaml` validity, markdown fence balance and UTF-8 cleanliness for all files, JSON validity of the complete LSL definitions dump, and exact entry-count matches (529 LSL functions, 483 UDP messages in the catalogue and in all four stub languages, 1,495 viewer settings, 2,438 Firestorm settings, per-file sizes in the master index). Run it after any regeneration:
+
+```bash
+python3 verify_refs.py   # PASS 271 checks, FAIL 0
+```
 
 Each skill folder contains `SKILL.md` (with YAML frontmatter: `name` + `description`), `skill.yaml`, and a `references/` folder.
 
